@@ -1,0 +1,20 @@
+CXX := g++
+SRC := main.cpp
+TARGET := untitled
+OBJ := $(SRC:.cpp=.o)
+
+all: $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CXX) -o $@ $^
+
+$%.o: %.cpp
+	$(CXX) -c -o $@ $<
+
+run: $(TARGET)
+	./$(TARGET) hueristic input data
+
+clean:
+	rm -rf main.o $(TARGET)
+
+.PHONY: all run clean
