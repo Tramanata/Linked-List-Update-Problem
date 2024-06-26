@@ -6,9 +6,9 @@ Move-to-front approach: in this approach, upon an access to an item, we want to 
 Transpose: in this approach, upon an access to an item, we want to assume that it is very likely it will be accessed again soon, however instead of puWng it in the front we just advance its location by one position, i.e., we swap it with the one immediately preceding it (if any). In other words, we are conservaAvely moving it close to the front, but not immediately to the front position.
 
 The program that you will implement shall do the following:
+
     1- Parse the input parameters to know the heuristic to be used, input file, LinkedList file.
     2- For the above example, the program will parse the data.txt file to create the initial linked list. Each line in the file represents an integer value to be stored in a linked-list item.
-    
     3- Iterate over each item in request_x.txt to process the requests; each line is an independent request for a particular item in the linked list, to be identified through the item value.
     4- After processing each request in (3), you will use the heuristic option (in this example Move-to-front) to decide how to update the linked-list based on the request. For this example, you will move the accessed item to the front.
     5- Move to the next request
@@ -16,6 +16,7 @@ The program that you will implement shall do the following:
 
 
 Grading Format
+
     10 points: Files submieed with proper name.
     10 points: Program is complete. The program successfully takes three inputs and returns th integer as output.
     10 points: Proper coding style and comments.
