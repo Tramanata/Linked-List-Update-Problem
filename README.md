@@ -3,7 +3,7 @@ Project 1 for my ECE 309 Data Structures and Algorithms class using C++. This pr
 
 Move-to-front approach: in this approach, upon an access to an item, we want to assume that it is very likely it will be accessed again soon, and thus we move it to the front of the linked list.
 
-Transpose: in this approach, upon an access to an item, we want to assume that it is very likely it will be accessed again soon, however instead of puWng it in the front we just advance its location by one position, i.e., we swap it with the one immediately preceding it (if any). In other words, we are conservaAvely moving it close to the front, but not immediately to the front position.
+Transpose: in this approach, upon an access to an item, we want to assume that it is very likely it will be accessed again soon, however instead of puttng it in the front we just advance its location by one position, i.e., we swap it with the one immediately preceding it (if any). In other words, we are conservatively moving it close to the front, but not immediately to the front position.
 
 The program that you will implement shall do the following:
 
